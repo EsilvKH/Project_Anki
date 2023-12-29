@@ -3,6 +3,7 @@
 ## Initial Setup:
 
 This file describes how to build and launch the app. 
+
 Start by opening two shells; one for running the backend and the other for the frontend.
 
 ## Frontend Setup:
