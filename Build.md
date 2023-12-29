@@ -1,13 +1,15 @@
-This file is used to describe how to build and laucnh the app.
-First of all you ought to launch 2 shells one which will run the backend and the other the frontend
-Go to the directory where lies the project
+##Building and Launching the App
 
-Frontend :
-Go to ./Project_Anki/Frontend
-run npm install, this will install all the dependencies necessited by the program
-run ng serve to launch the frontend
+#Initial Setup
+This file describes how to build and launch the app. Start by opening two shells; one for running the backend and the other for the frontend.
 
-Backend
-Go to ./Project_Anki/Backend
-run npm install
-run node ./server.js
+#Frontend Setup
+Navigate to the frontend directory: ./Project_Anki/Frontend.
+Install dependencies: Run npm install.
+Launch the frontend: Execute ng serve.
+Access the app: Navigate to http://localhost:4200/. The app will auto-reload on source file changes.
+
+#Backend Setup
+Go to the backend directory: ./Project_Anki/Backend.
+Install backend dependencies: Run npm install.
+Start the backend server: Execute node ./server.js.
