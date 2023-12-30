@@ -24,6 +24,7 @@ import {HttpClientModule} from "@angular/common/http";
     LessonDetailPageComponent,
     LoginComponent,
     InscriptionComponent,
+    StudyPageComponent,
   ],
   imports: [
     BrowserModule,
