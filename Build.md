@@ -97,6 +97,7 @@ CREATE TABLE flashcard (
 Insérez des données de démonstration dans chaque table pour tester leur fonctionnement.
 Ces données sont essentielles pour valider la structure et l'intégrité de votre base de données.
 
+
 -- Insertion de données dans 'user'
 
 INSERT INTO user (username, password, date_creation, last_login) VALUES 
@@ -105,6 +106,8 @@ INSERT INTO user (username, password, date_creation, last_login) VALUES
 
 ('User2', 'hashed_password2', '2023-01-05 08:30:00', NULL);
 
+
+
 -- Insertion de données dans 'lecon'
 
 INSERT INTO lecon (name_lecon, nbr_flashcard, id_user, date_creation, difficulty_level) VALUES 
@@ -112,6 +115,8 @@ INSERT INTO lecon (name_lecon, nbr_flashcard, id_user, date_creation, difficulty
 ('Leçon Français', 10, 1, '2023-01-10 09:00:00', 'débutant'),
 
 ('Leçon Maths', 15, 2, '2023-01-12 10:00:00', 'intermédiaire');
+
+
 
 -- Insertion de données dans 'flashcard'
 
