@@ -33,22 +33,22 @@ Ouverture de PGAdmin
 PGAdmin est l'interface graphique principale pour la gestion de bases de données PostgreSQL.
 Pour démarrer, ouvrez PGAdmin depuis votre ordinateur.
 
-# Vérification de la Connexion à la Base de Données
+## Vérification de la Connexion à la Base de Données
 
 En cas d'erreur de connexion à la base de données, le problème peut être dû à un service PostgreSQL non démarré.
 Le message "le temps de connexion est trop long" indique souvent que le service n'est pas actif.
 
-# Démarrage du Service PostgreSQL
+## Démarrage du Service PostgreSQL
 
 Appuyez sur la touche Windows et tapez Services pour ouvrir l'application Services.
 Faites défiler la liste jusqu'à trouver un service nommé semblable à postgresql.
 Cliquez sur ce service, puis sélectionnez Démarrer pour activer le service PostgreSQL.
 
-# Contrôle via PowerShell
+## Contrôle via PowerShell
 
 Il est à noter que la gestion de ce service ne se fait pas idéalement via PowerShell.
 
-# Création et Peuplement de Tables
+## Création et Peuplement de Tables
 
 Une fois la connexion établie avec PGAdmin, vous pouvez procéder à la création des tables user, lecon, et flashcard en utilisant les scripts SQL fournis.
 Assurez-vous de suivre les bonnes pratiques de sécurité, notamment en ce qui concerne le stockage des mots de passe.
@@ -92,7 +92,7 @@ CREATE TABLE flashcard (
 );
 
 
-# Insertion de Données
+## Insertion de Données
 
 Insérez des données de démonstration dans chaque table pour tester leur fonctionnement.
 Ces données sont essentielles pour valider la structure et l'intégrité de votre base de données.
