@@ -32,7 +32,8 @@ La page d'inscription permet aux nouveaux utilisateurs de créer un compte. Ils 
 
 Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont la possibilité d'entrer un titre pour chaque leçon et de commencer à ajouter du contenu sous forme de flashcards.
 
-<img width="1440" alt="Capture d’écran 2023-12-30 à 11 42 03" src="https://github.com/EsilvKH/Project_Anki/assets/120495158/2d0ba86e-cf04-4a77-9c00-f5d559d4443c">
+
+<img width="1440" alt="Capture d’écran 2023-12-30 à 12 33 02" src="https://github.com/EsilvKH/Project_Anki/assets/120495158/c957ba7a-b887-47a1-8fdb-74d3141f4384">
 
 
 
