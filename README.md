@@ -38,7 +38,7 @@ Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont l
 
 
 
-<img width="1440" alt="Capture d’écran 2023-12-30 à 11 46 06" src="https://github.com/EsilvKH/Project_Anki/assets/120495158/b699bfe1-935d-44fa-85e2-455c60b480df">
+<img width="1440" alt="Capture d’écran 2023-12-30 à 12 35 15" src="https://github.com/EsilvKH/Project_Anki/assets/120495158/dbb35651-8bff-49f8-9655-2b885ab86035">
 
 
 
