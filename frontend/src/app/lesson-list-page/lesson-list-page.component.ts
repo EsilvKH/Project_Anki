@@ -12,8 +12,10 @@ interface Lesson {
 
 @Component({
   selector: 'app-lesson-list-page',
-  templateUrl: './lesson-list-page.component.html'
+  templateUrl: './lesson-list-page.component.html',
+  styleUrls: ['./lesson-list-page.component.css']
 })
+  
 export class LessonListPageComponent implements OnInit, OnDestroy {
   lessonTitle: string = '';
   question: string = '';
