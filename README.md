@@ -1,4 +1,4 @@
-Ce projet fut demandé en tant que rendu final du module de Node & React, module du tronc commun de 4e Année de l'Ecole d'ingénieur de l'Esilv.
+Ce projet fut demandé en tant que rendu final du module de Node & React, module du tronc commun de 4e Année de l'Ecole d'ingénieur de l'ESILV.
 Il fut développé par une équipe de 5 étudiants :
   Heddy DAOUR
   Martin GUERIN-BOUTAUD
