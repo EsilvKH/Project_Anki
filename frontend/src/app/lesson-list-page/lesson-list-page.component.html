@@ -1,1 +1,33 @@
-<p>lesson-list-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Learning Platform</title>
+
+</head>
+<body>
+<header>
+  <h1>Flashcard Learning Platform</h1>
+</header>
+
+<div>
+  <input type="text" [(ngModel)]="lessonTitle" placeholder="Enter Lesson Title">
+  <button (click)="addLesson()">Add Lesson</button>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="question" placeholder="Enter Question">
+  <input type="text" [(ngModel)]="answer" placeholder="Enter Answer">
+  <button (click)="addFlashcard()">Add Flashcard</button>
+</div>
+
+<div *ngFor="let lesson of lessons">
+  <h3>{{ lesson.title }}</h3>
+  <div *ngFor="let flashcard of lesson.flashcards">
+    Q: {{ flashcard.question }} - A: {{ flashcard.answer }}
+  </div>
+</div>
+
+</body>
+</html>
