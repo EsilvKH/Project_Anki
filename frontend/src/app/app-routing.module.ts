@@ -19,6 +19,7 @@ const routes: Routes = [
   {path: 'lesson/:id', component: LessonDetailPageComponent},
   {path: 'login', component: LoginComponent},
   {path: 'inscription', component: InscriptionComponent},
+  { path: 'study-page', component: StudyPageComponent },
 
 
 
