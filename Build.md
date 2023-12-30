@@ -53,7 +53,55 @@ Il est à noter que la gestion de ce service ne se fait pas idéalement via Powe
 Une fois la connexion établie avec PGAdmin, vous pouvez procéder à la création des tables user, lecon, et flashcard en utilisant les scripts SQL fournis.
 Assurez-vous de suivre les bonnes pratiques de sécurité, notamment en ce qui concerne le stockage des mots de passe.
 
+-- Création de la table 'user'
+CREATE TABLE user (
+    id_user SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,  -- Stockez les mots de passe sous forme de hash
+    date_creation TIMESTAMP NOT NULL,
+    last_login TIMESTAMP
+);
+
+-- Création de la table 'lecon'
+CREATE TABLE lecon (
+    id_lecon SERIAL PRIMARY KEY,
+    name_lecon VARCHAR(100) NOT NULL,
+    nbr_flashcard INT NOT NULL,
+    id_user INT,
+    date_creation TIMESTAMP NOT NULL,
+    difficulty_level VARCHAR(50),
+    FOREIGN KEY (id_user) REFERENCES user (id_user)
+);
+
+-- Création de la table 'flashcard'
+CREATE TABLE flashcard (
+    id_flashcard SERIAL PRIMARY KEY,
+    question TEXT NOT NULL,
+    reponse TEXT NOT NULL,
+    id_lecon INT,
+    image_url VARCHAR(255),
+    difficulty_level VARCHAR(50),
+    FOREIGN KEY (id_lecon) REFERENCES lecon (id_lecon)
+);
+
+
 # Insertion de Données
 
 Insérez des données de démonstration dans chaque table pour tester leur fonctionnement.
 Ces données sont essentielles pour valider la structure et l'intégrité de votre base de données.
+
+-- Insertion de données dans 'user'
+INSERT INTO user (username, password, date_creation, last_login) VALUES 
+('User1', 'hashed_password1', '2023-01-01 12:00:00', '2023-01-10 15:00:00'),
+('User2', 'hashed_password2', '2023-01-05 08:30:00', NULL);
+
+-- Insertion de données dans 'lecon'
+INSERT INTO lecon (name_lecon, nbr_flashcard, id_user, date_creation, difficulty_level) VALUES 
+('Leçon Français', 10, 1, '2023-01-10 09:00:00', 'débutant'),
+('Leçon Maths', 15, 2, '2023-01-12 10:00:00', 'intermédiaire');
+
+-- Insertion de données dans 'flashcard'
+INSERT INTO flashcard (question, reponse, id_lecon, image_url, difficulty_level) VALUES 
+('Quelle est la capitale de la France ?', 'Paris', 1, NULL, 'facile'),
+('Combien font 2 + 2 ?', '4', 2, NULL, 'facile');
+
